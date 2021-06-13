@@ -1,0 +1,133 @@
+
+* {
+    font-family: 'Mate SC';
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(144,255,134);
+  background: linear-gradient(328deg, rgba(144,255,134,1) 20%, rgba(255,255,255,1) 38%, rgba(131,115,255,1) 124%);
+  }
+  h1 {
+    text-align:center;
+    color: white;
+    line-height: normal;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0%;
+    user-select: none;
+  text-shadow: 0 1px 0 #ccc,
+           0 2px 0 #c9c9c9,
+           0 3px 0 #bbb,
+           0 4px 0 #b9b9b9,
+           0 5px 0 #aaa,
+           0 6px 1px rgba(0,0,0,.1),
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 3px 5px rgba(0,0,0,.2),
+           0 5px 10px rgba(0,0,0,.25),
+           0 10px 10px rgba(0,0,0,.2),
+           0 20px 20px rgba(0,0,0,.15);
+  }
+  .container {
+      background-color: white;
+    max-width: 60%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 5% 6%;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.342);
+    user-select: none;
+    position: relative;
+  }
+  p{
+    text-align: justify;
+  }
+  p:hover{
+      color: blue ;
+  }
+  c:hover,g:hover,m:hover{
+      color:red;
+  }
+  .signature:hover{
+      filter:drop-shadow(100%);
+  }
+  span{
+      font-weight: 550;
+      display: block;
+      margin-top: 10px;
+  }
+  .container img{
+      max-width: 200px;
+      position: absolute;
+      bottom: -40px;
+      right:-40px;
+  }
+  .signature{
+      max-width: 200px;
+      position: absolute;
+      left: 190px;
+  
+  }
+  @media only screen and (max-width:1300px) {
+      .container{
+          max-width: 70%;
+      }
+      .signature{
+          left:30%;
+      }
+  }
+  @media only screen and (max-width: 1250px){
+      .signature{
+          left: 20%;
+      }
+  }
+  @media only screen and (max-width:1100px) {
+      .container{
+          max-width: 80%;
+      }
+      .signature{
+          left:20%;
+      }          
+  }
+  @media only screen and (max-width:800px) {
+      .container{
+          max-width: 85%;
+      }  
+      .signature{
+          left:23%;
+      }      
+  }
+  @media only screen and (max-width:700px) {
+      .container{
+          max-width: 90%;
+      }          
+      .container img{
+          max-width: 150px;
+      }
+      .signature{
+          left: 20%;
+      }
+  }
+  @media only screen and (max-width: 500px){
+      .signature{
+          left: 30%;
+      }
+  }
+  @media only screen and (max-width: 350px){
+      .signature{
+          left: 40%;
+      }
+  }
+  @media only screen and (max-width: 230px){
+      .signature{
+          left: 50%;
+      }
+  }
