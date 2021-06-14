@@ -1,0 +1,312 @@
+
+/* line 3, ../sass/s.scss */
+#watch {
+  position: relative;
+  zoom: 130%;
+}
+
+/* Bands */
+/* Grippers */
+/* line 11, ../sass/s.scss */
+.grip {
+  position: absolute;
+  border: 1px solid #777;
+  width: 12px;
+  height: 30px;
+  background: #eee;
+}
+
+/* line 18, ../sass/s.scss */
+#tlg {
+  top: -11px;
+  left: 50px;
+  border-radius: 8px 4px 0 0;
+  border-left: none;
+  box-shadow: inset 0 1px 0px #444444, inset 0 2px 0 white, inset 0 -6px 3px #444444;
+}
+
+/* line 25, ../sass/s.scss */
+#trg {
+  top: -11px;
+  left: 150px;
+  border-radius: 4px 8px 0 0;
+  border-right: none;
+  box-shadow: inset 0 1px 0 #444444, inset 0 2px 0 white, inset 0 -6px 3px #444444;
+}
+
+/* line 32, ../sass/s.scss */
+#blg {
+  top: 151px;
+  left: 50px;
+  border-radius: 0 0 4px 8px;
+  border-left: none;
+  box-shadow: inset 0 -1px 0px #444444, inset 0 -2px 0 white, inset 0 6px 3px #444444;
+}
+
+#brg {
+  top: 151px;
+  left: 150px;
+  border-radius: 0 0 8px 4px;
+  border-left: none;
+  box-shadow: inset 0 -1px 0px #444444, inset 0 -2px 0 white, inset 0 6px 3px #444444;
+}
+
+.band {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+  width: 87px;
+  height: 100px;
+  position: absolute;
+}
+
+#topBand {
+  top: -80px;
+  left: 63px;
+}
+
+#botBand {
+  top: 140px;
+  left: 63px;
+}
+
+#face {
+  background-color: #fefefe;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFEFEFE', endColorstr='#FFFFFFFF');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(17%, #dbd9da), color-stop(50%, #0b0d0c), color-stop(51%, #0b0e0c), color-stop(59%, #b0b1b5), color-stop(71%, #aeadbd), color-stop(84%, #cfcfcd), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #fefefe 0%, #dbd9da 17%, #0b0d0c 50%, #0b0e0c 51%, #b0b1b5 59%, #aeadbd 71%, #cfcfcd 84%, #ffffff 100%);
+  background-image: -moz-linear-gradient(top, #fefefe 0%, #dbd9da 17%, #0b0d0c 50%, #0b0e0c 51%, #b0b1b5 59%, #aeadbd 71%, #cfcfcd 84%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #fefefe 0%, #dbd9da 17%, #0b0d0c 50%, #0b0e0c 51%, #b0b1b5 59%, #aeadbd 71%, #cfcfcd 84%, #ffffff 100%);
+  background-image: linear-gradient(top, #fefefe 0%, #dbd9da 17%, #0b0d0c 50%, #0b0e0c 51%, #b0b1b5 59%, #aeadbd 71%, #cfcfcd 84%, #ffffff 100%);
+  margin: 20px;
+  padding: 10px 0 0 10px;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  box-shadow: inset 0 0 3px #000;
+  position: relative;
+}
+/* line 78, ../sass/s.scss */
+#face:after {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 22px;
+  position: absolute;
+  right: -15px;
+  top: 74px;
+  z-index: -9;
+  border-radius: 10px;
+  border: 1px solid #888;
+  background-color: #aaa;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FF282828');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(7%, #505050), color-stop(14%, #c5c7c6), color-stop(22%, #505050), color-stop(28%, #e6e4e7), color-stop(35%, #8d8c91), color-stop(42%, #e9e9e9), color-stop(49%, #8c8c8c), color-stop(57%, #e2e2e4), color-stop(65%, #c8c8c8), color-stop(72%, #808080), color-stop(76%, #b4b4b4), color-stop(85%, #fdfdfd), color-stop(92%, #b4b4b4), color-stop(100%, #282828));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #505050 7%, #c5c7c6 14%, #505050 22%, #e6e4e7 28%, #8d8c91 35%, #e9e9e9 42%, #8c8c8c 49%, #e2e2e4 57%, #c8c8c8 65%, #808080 72%, #b4b4b4 76%, #fdfdfd 85%, #b4b4b4 92%, #282828 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #505050 7%, #c5c7c6 14%, #505050 22%, #e6e4e7 28%, #8d8c91 35%, #e9e9e9 42%, #8c8c8c 49%, #e2e2e4 57%, #c8c8c8 65%, #808080 72%, #b4b4b4 76%, #fdfdfd 85%, #b4b4b4 92%, #282828 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #505050 7%, #c5c7c6 14%, #505050 22%, #e6e4e7 28%, #8d8c91 35%, #e9e9e9 42%, #8c8c8c 49%, #e2e2e4 57%, #c8c8c8 65%, #808080 72%, #b4b4b4 76%, #fdfdfd 85%, #b4b4b4 92%, #282828 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #505050 7%, #c5c7c6 14%, #505050 22%, #e6e4e7 28%, #8d8c91 35%, #e9e9e9 42%, #8c8c8c 49%, #e2e2e4 57%, #c8c8c8 65%, #808080 72%, #b4b4b4 76%, #fdfdfd 85%, #b4b4b4 92%, #282828 100%);
+}
+
+/* line 94, ../sass/s.scss */
+#glass {
+  box-shadow: inset 0 0 6px #000;
+  background: #a6a39e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFC8C5C0', endColorstr='#FFADA8A2');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c5c0), color-stop(100%, #ada8a2));
+  background-image: -webkit-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: -moz-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: -o-linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  background-image: linear-gradient(top, #c8c5c0 0%, #ada8a2 100%);
+  width: 150px;
+  height: 150px;
+  border: 1px solid #999;
+  border-radius: 80px;
+  position: relative;
+  /* Numbers */
+}
+/* line 107, ../sass/s.scss */
+#glass div {
+  position: absolute;
+  font-size: 14px;
+}
+/* line 111, ../sass/s.scss */
+#glass div:nth-child(2n) {
+  transform: rotate(-90deg);
+}
+/* line 115, ../sass/s.scss */
+#glass #twelve {
+  top: 3px;
+  left: 65px;
+}
+/* line 116, ../sass/s.scss */
+#glass #three {
+  top: 66px;
+  left: 135px;
+}
+/* line 117, ../sass/s.scss */
+#glass #six {
+  top: 135px;
+  left: 67px;
+}
+/* line 118, ../sass/s.scss */
+#glass #nine {
+  top: 66px;
+  left: 5px;
+}
+/* line 121, ../sass/s.scss */
+#glass #center {
+  background: #e1ddd2;
+  box-shadow: inset 0 1px 1px #777777, inset 0 -1px 1px #777777;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+/* line 130, ../sass/s.scss */
+#glass #center div {
+  top: 55px;
+  left: 55px;
+}
+/* line 134, ../sass/s.scss */
+#glass #center #name, #glass #center #desc {
+  top: 10px;
+  left: 32px;
+  font-variant: small-caps;
+  font-size: 8px;
+}
+/* line 140, ../sass/s.scss */
+#glass #center #desc {
+  top: 70px;
+  margin-left: 4px;
+  transform: none;
+}
+/* line 146, ../sass/s.scss */
+#glass #center #dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #444e5e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF444E5E', endColorstr='#FF4F4E5E');
+  left: 51px;
+  top: 55px;
+}
+/* line 156, ../sass/s.scss */
+#glass #center #smallHand, #glass #center #midHand, #glass #center #bigHand {
+  background: #1c2252;
+  width: 45px;
+  height: 2px;
+  border: 1px solid #4f4e5e;
+  box-shadow: 0 0 1px #b5afaf;
+  /* enables antialiasing */
+  border-radius: 80%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform-origin: 0% 50%;
+  transform: rotate(-45deg);
+  -webkit-animation: hours 86400s infinite linear;
+  -moz-animation: hours 86400s infinite linear;
+  -ms-animation: hours 86400s infinite linear;
+  -o-animation: hours 86400s infinite linear;
+  animation: hours 86400s infinite linear;
+}
+/* line 169, ../sass/s.scss */
+#glass #center #bigHand {
+  width: 65px;
+  height: 0;
+  border-bottom: none;
+  -webkit-animation: seconds 60s infinite linear;
+  -moz-animation: seconds 60s infinite linear;
+  -ms-animation: seconds 60s infinite linear;
+  -o-animation: seconds 60s infinite linear;
+  animation: seconds 60s infinite linear;
+}
+/* line 175, ../sass/s.scss */
+#glass #center #midHand {
+  width: 65px;
+  height: 1px;
+  -webkit-animation: minutes 3600s infinite linear;
+  -moz-animation:  minutes 3600s infinite linear;
+  -ms-animation:  minutes 3600s infinite linear;
+  -o-animation: minutes 3600s infinite linear;
+  animation: minutes 3600s infinite linear;
+}
+
+
+@-moz-keyframes seconds {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-moz-keyframes minutes {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-moz-keyframes hours {
+	0% {transform: rotate(-45deg);}
+	to {transform: rotate(315deg);}
+}
+@-webkit-keyframes seconds {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-webkit-keyframes minutes {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-webkit-keyframes hours {
+	0% {transform: rotate(-45deg);}
+	to {transform: rotate(315deg);}
+}
+@-o-keyframes seconds {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-o-keyframes minutes {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-o-keyframes hours {
+	0% {transform: rotate(-45deg);}
+	to {transform: rotate(315deg);}
+}
+@-ms-keyframes seconds {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-ms-keyframes minutes {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@-ms-keyframes hours {
+	0% {transform: rotate(-45deg);}
+	to {transform: rotate(315deg);}
+}
+@keyframes seconds {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@keyframes minutes {
+	0% {transform: rotate(-90deg);}
+	to {transform: rotate(270deg);}
+}
+@keyframes hours {
+	0% {transform: rotate(-45deg);}
+	to {transform: rotate(315deg);}
+}
+
+/* line 197, ../sass/s.scss */
+#right {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
