@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  * {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  
+  body {
+    width: 100%;
+    background: url("bg.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    background-color: #081a20;
+    color: #e1e1e1;
+  }
+  
+  .result {
+    width:100%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+    position: fixed;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dialog {
+    width: 300px;
+    height:300px;
+    background-color: #081a20;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+  
+  .title {
+    font-size: 32px;
+    margin: 20px;
+  }
+  .again {
+    display: flex;
+  }
+  .restart,.close {
+    margin: 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-weight: normal;
+    font-size: 20px;
+    background: #081a20;
+    box-shadow: -10px 10px 20px rgba(5, 16, 19, 0.2),
+      10px -10px 20px rgba(5, 16, 19, 0.2), -10px -10px 20px rgba(11, 36, 45, 0.9),
+      10px 10px 25px rgba(5, 16, 19, 0.9), inset 1px 1px 2px rgba(11, 36, 45, 0.3),
+      inset -1px -1px 2px rgba(5, 16, 19, 0.5);
+    border-radius: 100px;
+    color: #e1e1e1;
+  }
+  
+  nav {
+    display: flex;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #081a20;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    filter: invert(1);
+  }
+  
+  .start {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    border: none;
+    font-weight: normal;
+    font-size: 20px;
+    background: #081a20;
+    box-shadow: -10px 10px 20px rgba(5, 16, 19, 0.2),
+      10px -10px 20px rgba(5, 16, 19, 0.2), -10px -10px 20px rgba(11, 36, 45, 0.9),
+      10px 10px 25px rgba(5, 16, 19, 0.9), inset 1px 1px 2px rgba(11, 36, 45, 0.3),
+      inset -1px -1px 2px rgba(5, 16, 19, 0.5);
+    border-radius: 100px;
+    margin-right: 40px;
+    color: #e1e1e1;
+    /* transition: 0.3s ease; */
+  }
+  
+  .start:active,button:active {
+    font-size: 18px;
+    box-shadow: 1px 1px 2px rgba(11, 36, 45, 0.3),
+      -1px -1px 2px rgba(5, 16, 19, 0.5),
+      inset -10px 10px 20px rgba(5, 16, 19, 0.2),
+      inset 10px -10px 20px rgba(5, 16, 19, 0.2),
+      inset -10px -10px 20px rgba(11, 36, 45, 0.9),
+      inset 10px 10px 25px rgba(5, 16, 19, 0.9);
+  }
+  
+  section {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    /* display:grid; */
+    /* grid-template-columns: repeat(auto-fill,minmax(160px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fill, 6, 2); */
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .card {
+    --rotate: 0deg;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 110px;
+    height: 150px;
+    margin: 18px;
+    border-radius: 16px;
+    background: linear-gradient(
+      152.97deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 40px rgba(46, 46, 46, 0.5);
+  }
+  
+  .card:hover {
+    transform: scale(1.02) rotateY(var(--rotate));
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16), 0 10px 10px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card::after {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 72px;
+    transform: rotateY(180deg);
+    transition: opacity 0.5s ease;
+  }
+  
+  .turn {
+    --rotate: 180deg;
+    transform: rotateY(var(--rotate));
+  }
+  .turn::after {
+    opacity: 1;
+  }
+  
+  /* icons */
+  
+  .heart::after {
+    content: "\f004";
+  }
+  
+  .apple::after {
+    content: "\f179";
+  }
+  
+  .amazon::after {
+    content: "\f270";
+  }
+  
+  .discord::after {
+    content: "\f392";
+  }
+  
+  .facebook::after {
+    content: "\f09a";
+  }
+  
+  .google::after {
+    content: "\f1a0";
+  }
+  
+  .github::after {
+  content: "\f09b";
+  }
