@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+.input_text{
+    margin-bottom: 3%;
+}
+span{
+    color: blue;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+.p_style{
+    margin: 0;
+    font-size: 120%;
+
+}
