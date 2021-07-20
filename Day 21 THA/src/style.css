@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
+  border-bottom-left-radius: 32px;
+  border-top-left-radius: 32px;
+}
+
+.listContainer {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(65, 127, 219);
+  border-bottom-right-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+.foodNameContainer {
+  padding: 5% 15%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.foodNameInput {
+  height: 15%;
+  border-radius: 32px;
+  border: none;
+  padding-left: 5%;
+  font-size: 1rem;
+}
+.calInput {
+  height: 15%;
+  border-radius: 32px;
+  border: none;
+  padding-left: 5%;
+  font-size: 1rem;
+}
+.foodNameContainer button {
+  height: 15%;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.foodNameInput:focus {
+  outline: none;
+}
+.calInput:focus {
+  outline: none;
+}
+.foodNameContainer button:hover {
+  border: 2px solid rgb(65, 127, 219);
+}
+
+/* List */
+
+.lists {
+  padding: 5% 5%;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.card {
+  width: 100%;
+  height: 25%;
+  margin: 5% 0%;
+  background-color: aquamarine;
+  border-radius: 16px;
+  padding: 4% 5%;
+}
+
+.lists::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 10px;
+}
+
+.lists::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.lists::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0);
+  border-radius: 10px;
+  border: 2px solid rgba(127, 255, 212, 0.37);
+}
+
+.cardname {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.content {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.content i {
+  margin-right: 5px;
+}
+.toEdit {
+  visibility: hidden;
+}
