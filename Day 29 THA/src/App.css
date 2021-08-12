@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  height: 100vh;
+  text-align: center;
+  font-family: "Roborto", sans-serif;
+}
+
+.app.dark{
+  background-color: black;
+  color: white;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.form input{
+  padding: 0px 10px;
+}
+
+.form button{
+  margin: 0px 10px 0px 10px;
+}
+
+.card {
+  margin-top: 50px;
+  border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+}
+
+.card.dark{
+  background-color: rgb(27, 27, 27);
+}
+
+.weather{
+  text-align: center;
+}
+
+.card img {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.card .place{
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin: 10px 0 10px 0;
+}
+
+.whp{
+  margin: 20px 0 10px 0;
+}
+.card .temp{
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.whp .title{
+  font-size: 0.8rem;
+}
+.whp .data{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.whp .data .unit{
+  font-size: 0.8rem;
+}
+
+.card .desc{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.toggle-theme{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
