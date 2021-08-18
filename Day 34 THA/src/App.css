@@ -1,0 +1,19 @@
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+button, input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  display: inline-block;
+}
