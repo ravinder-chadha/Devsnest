@@ -1,0 +1,135 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+body{
+  background-color: rgba(247, 235, 235, 0.178);
+}
+.container{
+  max-width: 1000px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 0.01px solid rgb(209, 208, 208);
+  height: 60px;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0px 3px 0 3px;
+}
+
+.navbar .search{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .search input{
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+.navbar .navbar-nav img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.story{
+  display: block;
+  margin-top: 100px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.story::-webkit-scrollbar{
+  display: none;
+}
+
+.story .story-img{
+  width: 55px;
+  height: 55px;
+  border: 2px solid #c62f91;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.story .story-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.post{
+  margin: 50px 0px;
+}
+
+.post .card-header{
+  display: flex;
+  justify-content: space-between;
+}
+.post .buttons{
+  margin: 10px 0px;
+}
+
+.post .buttons i{
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.post .buttons i.liked{
+  color: #ed4956;
+}
+
+#book{
+  float: right;
+  margin-top: 0px;
+}
+.foot{
+  margin-top: 15px;
+  border-top: 0.5px solid rgba(175, 173, 173, 0.295);
+  padding-top: 5px;
+}
+.smile{
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.foot input{
+  width: 85%;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-top: 1px;
+}
+.foot input:focus{
+  outline: none;
+}
+.add{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  background-color: #fff;
+  color: rgba(13, 89, 189, 0.788);
+}
+.add:hover{
+  cursor: pointer;
+}
+
+.card-header img{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.card-header h5{
+  position: absolute;
+  left: 60px
+}
